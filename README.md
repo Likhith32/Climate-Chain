@@ -1,24 +1,112 @@
-Quantum Random Number Generator (QRNG) ⚛️
-This project is a Flask-based web server that provides a Quantum Random Number Generator (QRNG) service. It leverages the principles of quantum mechanics to generate truly random numbers, which are then exposed through a simple REST API. To ensure the quality of the randomness, the generated bits are subjected to a series of statistical tests.
+🌍 ClimateChain: A Quantum-Secured, Verifiable Climate Data Platform
+Problem Statement Title
 
-Features ✨
-Quantum Random Bit Generation: Utilizes Qiskit and its simulator to generate 256 random bits based on the principles of quantum superposition.
+Cryptographic Proof Over Institutional Trust
 
-Randomness Testing: Performs a suite of statistical tests on the generated bits to validate their randomness:
+Theme: Quantum Technologies for a Sustainable Future
+Category: Software
+Team ID: C-17937@238T1A0581
 
-Entropy Calculation: Measures the uncertainty or randomness in the bits.
+📌 Project Overview
 
-Chi-Square Test: Assesses the uniformity of the distribution of 0s and 1s.
+ClimateChain is a real-time, quantum-secured climate data collection and visualization platform. It empowers farmers, scientists, and community admins with actionable insights on climate conditions by combining:
 
-Runs Test: Checks for the presence of unusual streaks of 0s or 1s.
+Quantum Random Number Generation (QRNG) ⚛️ for data security
 
-REST API: Exposes a simple /qrng endpoint that returns a 256-bit random key in hexadecimal format, along with the results of the randomness tests.
+Blockchain-inspired ledger ⛓️ for data integrity
 
-CORS Enabled: The server is configured with CORS to allow cross-origin requests.
+AI-based predictions 🤖 for risk assessment
 
-How it Works ⚙️
-The core of this project lies in its quantum random bit generation function. First, a quantum circuit with 256 qubits is created. A Hadamard gate is then applied to all qubits, which puts them into a state of superposition where they have an equal probability of being a 0 or a 1. Finally, each qubit is measured, causing it to collapse to a definite state of either 0 or 1, providing a string of random bits. These bits are then passed through several statistical tests to ensure their quality.
+React-based frontend ⚛️ for seamless user experience
 
-API Endpoint 📡
-GET /qrng
-This endpoint returns a JSON object containing a 256-bit quantum random number in hexadecimal format, along with statistics about its randomness. The response includes the hexadecimal key and details from the randomness tests, such as the count of zeros and ones, entropy, chi-square value, p-value, and the observed vs. expected number of runs.
+The MVP demonstrates the core value proposition in under 5 minutes, making it ideal for hackathon demos.
+
+🔑 Features ✨
+🔐 Backend & Security
+
+Quantum-Secured Encryption: Keys generated using Qiskit-based QRNG.
+
+Randomness Testing: Entropy, Chi-Square, and Runs Test applied to generated bits.
+
+Flask REST API: Provides /qrng endpoint and climate data services.
+
+Ledger Integrity: Blockchain-inspired system ensures tamper-proof data storage.
+
+⚛️ Quantum Random Number Generator (QRNG)
+
+256-bit random keys generated from quantum superposition.
+
+Exposed via Flask API with CORS support.
+
+Statistical validation for randomness quality.
+
+📊 Frontend (React + Next.js + Tailwind)
+
+React-based Dashboard: Built with Next.js 14 + TypeScript.
+
+Tailwind CSS + Shadcn/UI: For modern, responsive design.
+
+Framer Motion: Smooth animations for better UX.
+
+Recharts: Climate data visualization with interactive charts.
+
+User Authentication: Farmers, scientists, and admins get role-based dashboards.
+
+Mobile Responsive: Fully optimized for phones, tablets, and desktops.
+
+🤖 AI & Insights
+
+Lightweight ML model for drought-risk and extreme condition predictions.
+
+Real-time updates with animated graphs and charts.
+
+🏆 Hackathon MVP Flow
+
+Preloaded demo sensors for offline use.
+
+3–5 minute demo-ready presentation.
+
+Error handling, loading spinners, and accessibility support.
+
+⚙️ How It Works
+QRNG Service
+
+A quantum circuit with 256 qubits is created using Qiskit.
+
+Each qubit goes through a Hadamard gate, creating equal probability of 0 or 1.
+
+Measurement collapses states → Produces a random bitstring.
+
+Bits are tested using entropy, chi-square, and runs tests.
+
+Flask exposes results via /qrng endpoint.
+
+ClimateChain Flow
+
+Frontend (React/Next.js): User signs up and logs in.
+
+Backend (Flask): Collects climate data from IoT sensors and OpenWeatherMap API.
+
+QRNG Security: Encrypts data using Qiskit QRNG keys.
+
+Ledger Logging: Hashes stored in blockchain-inspired ledger.
+
+Frontend Dashboard: Displays encrypted climate data, risk predictions, and visual charts.
+
+
+🌱 Impact & Benefits
+
+Farmers & Communities: Real-time drought-risk predictions → Better crop planning.
+
+Scientists & Policymakers: Transparent and tamper-proof climate data.
+
+Economic: Improves credibility in carbon markets & conservation funding.
+
+Social: Restores public trust in environmental science.
+
+Environmental: Creates a global standard for trusted climate data.
+
+
+Blockchain for Environmental Data Integrity
+
+OpenWeatherMap API
